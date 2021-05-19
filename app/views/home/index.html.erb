@@ -1,6 +1,4 @@
-<%
-=begin%>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -9,6 +7,7 @@
       rel="stylesheet"
       href="https://unpkg.com/@shopify/polaris@4.25.0/styles.min.css"
       />
+    <link rel="stylesheet" href="https://unpkg.com/@shopify/polaris@4.22.0/styles.min.css"/>  
     <script>
       document.addEventListener("DOMContentLoaded", async function() {
         var SessionToken = window["app-bridge"].actions.SessionToken
@@ -61,17 +60,7 @@
     <% else %>
     <p>This app has not created any webhooks for this Shop. Add webhooks to your ShopifyApp initializer if you need webhooks</p>
     <% end %>
-  </body>
-</html> 
-<%
-=end%>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://unpkg.com/@shopify/polaris@4.22.0/styles.min.css"/>
-  </head>
-  <body>
     <%= react_component("App") %>
   </body>
-</html>
+</html> 
