@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@apollo/client@^3.3.18":
-  version "3.3.18"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.3.18.tgz#dc722576a88fddb5c3ae0bb03d5675e0bb7ec07e"
-  integrity sha512-SaJSda4V36/pnv7jkCBROBPwd3w/3TnG/Bd8oLESuNqm6ruXDHt067ow00Y2zz1AOL8SuOI9LXjmkr+FcTqnIQ==
+"@apollo/client@^3.3.19":
+  version "3.3.19"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.3.19.tgz#f1172dc9b9d7eae04c8940b047fd3b452ef92d2c"
+  integrity sha512-vzljWLPP0GwocfBhUopzDCUwsiaNTtii1eu8qDybAXqwj4/ZhnIM46c6dNQmnVcJpAIFRIsNCOxM4OlMDySJug==
   dependencies:
     "@graphql-typed-document-node/core" "^3.0.0"
     "@types/zen-observable" "^0.8.0"
@@ -1038,10 +1038,10 @@
     hsluv "^0.1.0"
     tslib "^1.14.1"
 
-"@shopify/polaris@^6.4.0":
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-6.4.0.tgz#53ddf68ce1f9557f1d0654d23b2bab09d54c7e5a"
-  integrity sha512-qNSfort7DCqfpRv0ieUx8i/V4IOOOzf2G5VZAOiGeOezhboMu8WYqkME3dDnl+jujU3aC7YXbFQriQp/mnSiaQ==
+"@shopify/polaris@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-6.5.0.tgz#be03a29c339d7368720114bab1275cd1a566ef12"
+  integrity sha512-IX+DrqvOlIXeP+ZZsxc8RZBSc1kbPvy2MrXHXldJV+AultuGVtra3T4reTY9A76TleL15XzPEh9Qdf08Gy66tQ==
   dependencies:
     "@shopify/polaris-icons" "^4.1.0"
     "@shopify/polaris-tokens" "^3.0.0"
