@@ -8,6 +8,7 @@
       href="https://unpkg.com/@shopify/polaris@4.25.0/styles.min.css"
       />
     <link rel="stylesheet" href="https://unpkg.com/@shopify/polaris@4.22.0/styles.min.css"/>  
+    <%= javascript_pack_tag 'application' %>
     <script>
       document.addEventListener("DOMContentLoaded", async function() {
         var SessionToken = window["app-bridge"].actions.SessionToken
@@ -47,6 +48,9 @@
     </script>
   </head>
   <body>
+    <div>The App should be between here...</div>
+    <%= react_component("App") %>
+    <div>... and here</div>
     <h2>Products</h2>
     <div id="products"><br>Loading...</div>
     <h2>Webhooks</h2>
@@ -61,6 +65,5 @@
     <p>This app has not created any webhooks for this Shop. Add webhooks to your ShopifyApp initializer if you need webhooks</p>
     <% end %>
 
-    <%= react_component("App") %>
   </body>
 </html> 

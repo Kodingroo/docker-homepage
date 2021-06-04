@@ -1038,10 +1038,10 @@
     hsluv "^0.1.0"
     tslib "^1.14.1"
 
-"@shopify/polaris@^6.4.0":
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-6.4.0.tgz#53ddf68ce1f9557f1d0654d23b2bab09d54c7e5a"
-  integrity sha512-qNSfort7DCqfpRv0ieUx8i/V4IOOOzf2G5VZAOiGeOezhboMu8WYqkME3dDnl+jujU3aC7YXbFQriQp/mnSiaQ==
+"@shopify/polaris@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-6.5.0.tgz#be03a29c339d7368720114bab1275cd1a566ef12"
+  integrity sha512-IX+DrqvOlIXeP+ZZsxc8RZBSc1kbPvy2MrXHXldJV+AultuGVtra3T4reTY9A76TleL15XzPEh9Qdf08Gy66tQ==
   dependencies:
     "@shopify/polaris-icons" "^4.1.0"
     "@shopify/polaris-tokens" "^3.0.0"
