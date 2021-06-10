@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     host: data.host,
   });
 
+  console.log("This is a test: ",data);
   var actions = AppBridge.actions;
   var TitleBar = actions.TitleBar;
   TitleBar.create(app, {
