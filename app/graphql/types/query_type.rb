@@ -11,7 +11,7 @@ module Types
     field :test_field, String, null: false,
       description: "An example field added by the generator"
     def test_field
-      "Congratulations! Your requests are now authenticated using App Bridge Authentication."
+      "This is the tst query!"
     end
   end
 end
