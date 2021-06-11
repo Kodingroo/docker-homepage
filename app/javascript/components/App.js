@@ -10,6 +10,7 @@ import { authenticatedFetch } from '@shopify/app-bridge-utils';
 import enTranslations from '@shopify/polaris/locales/en.json';
 import React from 'react';
 import TestData from './TestData'
+import AddProduct from './AddProduct'
 
 export default function App() {
   const client = new ApolloClient({
@@ -27,6 +28,7 @@ export default function App() {
           <Page>
             <EmptyState>
               <div>This is App.js</div>
+              <AddProduct/>
               <TestData/>
             </EmptyState>
           </Page>
