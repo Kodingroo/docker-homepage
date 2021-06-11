@@ -2,10 +2,15 @@ import { gql, useQuery } from '@apollo/client';
 
 import React from 'react';
 
-const TEST_QUERY = gql`query { testField }`;
+// const TEST_QUERY = gql`query { currentTime }`;
+const PRODUCT_QUERY = gql`query { allProducts {
+  title
+  description
+}}`;
 
 export default function TestData() {
-  const {loading, error, data} = useQuery(TEST_QUERY);
+  const {loading, error, data} = useQuery(PRODUCT_QUERY);
+  console.log("Product data: ", data);
 
   if (loading) {
     return (
@@ -17,7 +22,11 @@ export default function TestData() {
     );
   } else {
     return (
-      <p>{data.testField}</p>
+      <p>Loaded!</p>
+      // <p>{data.currentTime}</p>
+      // <p>{data.forEach((product) => {
+      //   <li>{product.title}</li>
+      // })}</p>
     );
   }
 }

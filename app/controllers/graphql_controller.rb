@@ -1,4 +1,5 @@
-class GraphqlController < ApplicationController
+# class GraphqlController < ApplicationController # Must exchange with AuthenticatedController to use http://localhost:3000/graphiql
+class GraphqlController < AuthenticatedController
   # If accessing from outside this domain, nullify the session
   # This allows for outside API access while preventing CSRF attacks,
   # but you'll have to authenticate your user separately
