@@ -10,7 +10,6 @@ const PRODUCT_QUERY = gql`query { allProducts {
 
 export default function TestData() {
   const {loading, error, data} = useQuery(PRODUCT_QUERY);
-  console.log("Product data: ", data);
 
   if (loading) {
     return (
@@ -21,12 +20,13 @@ export default function TestData() {
       <div>Something went wrong!</div>
     );
   } else {
-    return (
-      <p>Loaded!</p>
-      // <p>{data.currentTime}</p>
-      // <p>{data.forEach((product) => {
-      //   <li>{product.title}</li>
-      // })}</p>
-    );
+    console.log("Product data: ", data.allProducts);
+    return data.allProducts.map(({ title, description }) => (
+      <div key={title}>
+        <p>
+          {title}: {description}
+        </p>
+      </div>
+    ));
   }
 }
