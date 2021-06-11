@@ -3,10 +3,9 @@ import { gql, useMutation } from '@apollo/client';
 import React from 'react';
 
 const ADD_PRODUCT = gql`
-  mutation CreateProduct($title: String!) {
-    createProduct(title: $title) {
+  mutation CreateProduct($type: String!) {
+    createProduct(title: $type) {
     title
-    description
   }
 }
 `;

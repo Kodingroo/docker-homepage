@@ -5,7 +5,6 @@ import React from 'react';
 // const TEST_QUERY = gql`query { currentTime }`;
 const PRODUCT_QUERY = gql`query { allProducts {
   title
-  description
 }}`;
 
 export default function TestData() {
@@ -21,10 +20,10 @@ export default function TestData() {
     );
   } else {
     console.log("Product data: ", data.allProducts);
-    return data.allProducts.map(({ title, description }) => (
+    return data.allProducts.map(({ title }) => (
       <div key={title}>
         <p>
-          {title}: {description}
+          {title}
         </p>
       </div>
     ));
