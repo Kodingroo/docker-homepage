@@ -10,6 +10,8 @@ module Types
     # TODO: remove me
     field :test_field, String, null: false,
       description: "An example field added by the generator"
+    field :current_time, String, null: false,
+      description: "An example field added by the generator"
 
     field :all_products, [ProductType], null: false
 
@@ -19,6 +21,10 @@ module Types
 
     def test_field
       "This is the tst query!"
+    end
+
+    def current_time
+      "This is the ccurrent time : #{DateTime.now.strftime('%Q')}"
     end
   end
 end
